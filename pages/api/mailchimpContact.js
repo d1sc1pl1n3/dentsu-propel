@@ -31,13 +31,12 @@ const handler = async (event, context) => {
         },
       }
     );
-    console.log("sending data", data);
+    //console.log("sending data", data);
     return {
       statusCode: 200,
       body: JSON.stringify(data),
     };
   } catch (error) {
-    console.log(error);
     return {
       statusCode: 500,
       body: JSON.stringify(error),
